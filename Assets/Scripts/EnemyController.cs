@@ -39,7 +39,8 @@ public class EnemyController : MonoBehaviour
         dir.y = 0f;
 
         Quaternion targetRot = Quaternion.LookRotation(dir);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * speedRotation);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * speedRotation);
+
     }
 
     private void FollowPlayer(float playerDistance)
